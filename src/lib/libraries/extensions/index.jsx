@@ -50,6 +50,10 @@ import twIcon from './tw/tw.svg';
 
 import customExtensionIcon from './custom/custom.svg';
 
+import jsIconUrl from './javascript/js-logo.png';
+import jsInsetIconURL from './javascript/icons8-javascript.svg'
+
+
 export default [
     {
         name: (
@@ -67,6 +71,26 @@ export default [
                 defaultMessage="Play instruments and drums."
                 description="Description for the 'Music' extension"
                 id="gui.extension.music.description"
+            />
+        ),
+        featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Javascript"
+                description="Name for the 'Javascript' extension"
+                id="gui.extension.javascript.name"
+            />
+        ),
+        extensionId: 'javascript',
+        iconURL: jsIconUrl,
+        insetIconURL: jsInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Add javascript blocks to your Scratch program."
+                description="Description for the 'Javascript' extension"
+                id="gui.extension.javascript.description"
             />
         ),
         featured: true
